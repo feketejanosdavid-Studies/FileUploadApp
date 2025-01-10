@@ -1,6 +1,6 @@
 <div class="mb-3">
     <label for="formFile" class="form-label"></label>
-    <input (change)="SelectFiles($event)" type="file" class="form-control" id="formFile">
+    <input multiple="true" (change)="SelectFiles($event)" type="file" class="form-control" id="formFile">
 </div>
 <div class="my-3">
     <button [disabled]="!SelectedFiles" (click)="upload()" type="button" class="btn btn-outline-dark">Upload</button>

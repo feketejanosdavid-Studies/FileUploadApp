@@ -1,0 +1,9 @@
+<!-- {{files|}} -->
+
+<div class="row" *ngFor="let file of files">
+    <div class="col"><a [href]="file.url">{{file.filename.substring(19)}}</a></div>
+    <div class="col my-1">
+        <button class="btn btn-outline-danger" (click)="deleteFile(file)" type="button">Delete</button>
+    </div>
+
+</div>
